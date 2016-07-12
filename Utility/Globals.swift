@@ -40,8 +40,8 @@ class Globals: NSObject {
         return 70
     }
     
-    class func TREATMENT_CELL_HEIGHT()->CGFloat {
-        return 60
+    class func INFORBOARDLIST_CELL_HEIGHT()->CGFloat {
+        return 80
     }
     
     class func TREATMENT_DETAIL_CELL_HEIGHT()->CGFloat {
