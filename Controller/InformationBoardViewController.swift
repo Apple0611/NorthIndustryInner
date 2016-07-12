@@ -149,22 +149,7 @@ class InformationBoardViewController: BaseViewController,UIScrollViewDelegate {
         }
     }
     
-//    - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView; {
-//    CGPoint point=scrollView.contentOffset;
-//    NSInteger page=(NSInteger)point.x/SCREEN_WIDTH;
-//    if (page==0) {
-//    [_selectLineView setFrame:CGRectMake(0, 39, SCREEN_WIDTH/2, 1)];
-//    _voucheButton.selected=NO;
-//    _accountBalanceBtn.selected=YES;
-//    }else{
-//    [_selectLineView setFrame:CGRectMake(SCREEN_WIDTH/2, 39, SCREEN_WIDTH/2, 1)];
-//    _voucheButton.selected=YES;
-//    _accountBalanceBtn.selected=NO;
-//    if (!_isVoucherRequest) {
-//    [self loadVoucherListNextPageRefresh];
-//    }
-//    }
-//    }
+
 
 
 
