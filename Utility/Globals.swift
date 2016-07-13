@@ -11,14 +11,6 @@ import UIKit
 class Globals: NSObject {
     
     
-    enum TreatmentCategory : Int{
-        case KIDNEY_STONE            //肾结石
-        case URETHRAL_STRICTURE        //尿道狭窄
-        case HYPOSPADIAS               //尿道下裂
-        case UPJO                      //UPJO
-        case OTHER                     //其他
-    }
-    
     
     class func RGB(red:CGFloat,green:CGFloat,blue:CGFloat)->UIColor {
         return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1)
@@ -44,8 +36,8 @@ class Globals: NSObject {
         return 80
     }
     
-    class func TREATMENT_DETAIL_CELL_HEIGHT()->CGFloat {
-        return 44
+    class func PROCUREMENTAUDI_CELL_HEIGHT()->CGFloat {
+        return 90
     }
     
     class func RandomColor()->UIColor {
