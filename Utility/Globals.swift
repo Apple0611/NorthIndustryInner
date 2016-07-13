@@ -40,6 +40,10 @@ class Globals: NSObject {
         return 90
     }
     
+    class func SUPPLIERMANAGEMENT_CELL_HEIGHT()->CGFloat {
+        return 120
+    }
+    
     class func RandomColor()->UIColor {
 
         let redColor:CGFloat=CGFloat(CGFloat(random())%CGFloat(256))
