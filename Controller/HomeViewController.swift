@@ -87,7 +87,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             let procurementAuditViewController:ProcurementAudiViewController=ProcurementAudiViewController()
             self.navigationController?.pushViewController(procurementAuditViewController, animated: true)
         }else if sender.tag==100002 {
-            
+            let supplierManagementViewController:SupplierManagementViewController=SupplierManagementViewController()
+            self.navigationController!.pushViewController(supplierManagementViewController, animated: true)
         }else if sender.tag==100003 {
             
         }else if sender.tag==100004 {
