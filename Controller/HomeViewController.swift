@@ -90,7 +90,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             let supplierManagementViewController:SupplierManagementViewController=SupplierManagementViewController()
             self.navigationController!.pushViewController(supplierManagementViewController, animated: true)
         }else if sender.tag==100003 {
-            
+            let personalCenterViewController:PersonalCenterViewController=PersonalCenterViewController()
+            self.navigationController?.pushViewController(personalCenterViewController, animated: true)
         }else if sender.tag==100004 {
             
         }else if sender.tag==100005 {
