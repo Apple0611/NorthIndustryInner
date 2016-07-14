@@ -93,8 +93,11 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             let personalCenterViewController:PersonalCenterViewController=PersonalCenterViewController()
             self.navigationController?.pushViewController(personalCenterViewController, animated: true)
         }else if sender.tag==100004 {
-            
+            let downloadZoneViewController:DownloadZoneViewController=DownloadZoneViewController()
+            self.navigationController?.pushViewController(downloadZoneViewController, animated: true)
         }else if sender.tag==100005 {
+            let materiaQuotationViewController:MateriaQuotationViewController=MateriaQuotationViewController()
+            self.navigationController?.pushViewController(materiaQuotationViewController, animated: true)
             
         }
     }

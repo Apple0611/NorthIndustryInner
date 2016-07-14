@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MateriaQuotationTableViewCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="MateriaQuotationTableViewCell" customModule="NorthIndustryInner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22日包头镀锌管：价格下跌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-me-dsF">
+                        <rect key="frame" x="15" y="10" width="190" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Cwn-do-hNA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-06-06 09:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDE-4c-a3y">
+                        <rect key="frame" x="205" y="10" width="100" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="YqL-2y-FeZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="包头训：今日开市，包头市场镀锌管价格下跌，幅度10-40/顿；成交持续弱势。截止发稿，4寸*3.75规格" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-QI-loO">
+                        <rect key="frame" x="15" y="40" width="290" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIq-f5-5F6">
+                        <rect key="frame" x="0.0" y="79" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JqP-V0-cp7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hIq-f5-5F6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="29J-Zk-Smn"/>
+                    <constraint firstItem="bWB-me-dsF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Czw-H3-oDO"/>
+                    <constraint firstItem="vDE-4c-a3y" firstAttribute="leading" secondItem="bWB-me-dsF" secondAttribute="trailing" id="Dkh-L4-fbr"/>
+                    <constraint firstItem="vDE-4c-a3y" firstAttribute="trailing" secondItem="UQP-QI-loO" secondAttribute="trailing" id="JQm-Kp-NpT"/>
+                    <constraint firstItem="bWB-me-dsF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="M8F-GK-1dU"/>
+                    <constraint firstItem="UQP-QI-loO" firstAttribute="top" secondItem="bWB-me-dsF" secondAttribute="bottom" constant="5" id="VkN-Vv-pMA"/>
+                    <constraint firstItem="hIq-f5-5F6" firstAttribute="top" secondItem="UQP-QI-loO" secondAttribute="bottom" constant="4" id="Zq3-Lo-btA"/>
+                    <constraint firstItem="bWB-me-dsF" firstAttribute="baseline" secondItem="vDE-4c-a3y" secondAttribute="baseline" constant="-2" id="lYu-o7-RjQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hIq-f5-5F6" secondAttribute="bottom" constant="-9" id="o0D-cl-dlP"/>
+                    <constraint firstAttribute="trailing" secondItem="hIq-f5-5F6" secondAttribute="trailing" id="om5-45-ql8"/>
+                    <constraint firstItem="UQP-QI-loO" firstAttribute="centerX" secondItem="hIq-f5-5F6" secondAttribute="centerX" id="s7V-bM-M8p"/>
+                    <constraint firstItem="bWB-me-dsF" firstAttribute="top" secondItem="vDE-4c-a3y" secondAttribute="top" id="tiC-bM-ahw"/>
+                    <constraint firstItem="bWB-me-dsF" firstAttribute="leading" secondItem="UQP-QI-loO" secondAttribute="leading" id="wcK-oe-SC7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentText" destination="UQP-QI-loO" id="AQA-XA-gYc"/>
+                <outlet property="sepLine" destination="hIq-f5-5F6" id="ykH-G7-2Xj"/>
+                <outlet property="timeLabel" destination="vDE-4c-a3y" id="g2L-Ce-qnu"/>
+                <outlet property="titleName" destination="bWB-me-dsF" id="4uy-3c-ZXj"/>
+            </connections>
+            <point key="canvasLocation" x="440" y="386"/>
+        </tableViewCell>
+    </objects>
+</document>
