@@ -52,6 +52,7 @@ class PersonalCenterViewController: BaseViewController,UITableViewDelegate,UITab
         tableView.dataSource=self
         tableView.backgroundColor=UIColor.clearColor()
         tableView.separatorStyle=UITableViewCellSeparatorStyle.None
+        tableView.scrollEnabled=false
         self.view .addSubview(tableView)
         
         textArray=["我的资料","功能介绍","常见问题","关于我们"]
@@ -109,8 +110,19 @@ class PersonalCenterViewController: BaseViewController,UITableViewDelegate,UITab
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let homeListDetailViewController:HomeListDetailViewController=HomeListDetailViewController()
-        self.navigationController?.pushViewController(homeListDetailViewController, animated: true)
+        if indexPath.row==0 {
+            let myInformationViewController:MyInformationViewController=MyInformationViewController()
+            self.navigationController?.pushViewController(myInformationViewController, animated: true)
+        }else if indexPath.row==1 {
+            let functionIntroductionViewController:FunctionIntroductionViewController=FunctionIntroductionViewController()
+            self.navigationController?.pushViewController(functionIntroductionViewController, animated: true)
+        }else if indexPath.row==2 {
+            let faqViewController:FAQViewController=FAQViewController()
+            self.navigationController?.pushViewController(faqViewController, animated: true)
+        }else if indexPath.row==3 {
+            let aboutUsViewController:AboutUsViewController=AboutUsViewController()
+            self.navigationController?.pushViewController(aboutUsViewController, animated: true)
+        }
     }
 
     
