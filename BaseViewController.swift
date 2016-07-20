@@ -20,6 +20,13 @@ class BaseViewController: UIViewController {
         self.extendedLayoutIncludesOpaqueBars=false
         
         
+        self.navigationController?.navigationBar.barTintColor=Globals.blueColor()
+        self.navigationController?.navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.whiteColor()]
+
+        
+
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +34,6 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
 
     /*
     // MARK: - Navigation

@@ -23,18 +23,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window=UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor=UIColor.whiteColor()
         
-//        if LoginInfo.sharedLoginInfo().isLogin {
-            nav=UINavigationController(rootViewController: homeViewController)
-//        }else{
-//            nav=UINavigationController(rootViewController: loginViewController)
-//        }
+
+        nav=UINavigationController(rootViewController: homeViewController)
+
         window?.rootViewController=nav
         window?.makeKeyAndVisible()
+        
+        UIApplication.sharedApplication().statusBarStyle=UIStatusBarStyle.LightContent
+        
         
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "setMainViewAfterLogin", name: "loginSuccess", object: nil)
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "setMainViewAfterLogout", name: "LogoutSuccess", object: nil)
         return true
     }
+
 
 
     

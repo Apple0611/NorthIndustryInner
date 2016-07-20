@@ -16,6 +16,9 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title="首页"
+        
+        self.navigationController?.navigationBar.hidden=false
+        
         if !LoginInfo.sharedLoginInfo().isLogin {
             let loginViewController:LoginViewController=LoginViewController()
             self.navigationController?.pushViewController(loginViewController, animated: false)
@@ -101,6 +104,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             
         }
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
