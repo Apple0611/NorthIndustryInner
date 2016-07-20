@@ -54,13 +54,22 @@ class Globals: NSObject {
         
     }
     
-    class func SepLineColor()->UIColor {
-        return UIColor(red: 243/255.0, green: 243/255.0, blue: 243/255.0, alpha: 1.0)
+    class func blueColor()->UIColor {
+        return UIColor(red: 0x3e/255.0, green: 0xa1/255.0, blue: 0xc7/255.0, alpha: 1.0)
     }
     
-    class func TextColor()->UIColor {
-        return UIColor(red: 96/255.0, green: 96/255.0, blue: 96/255.0, alpha: 1.0)
+    class func grayColor()->UIColor {
+        return UIColor(red: 0xf3/255.0, green: 0xf3/255.0, blue: 0xf3/255.0, alpha: 1.0)
     }
+
+    class func greenColor()->UIColor {
+        return UIColor(red: 0x1f/255.0, green: 0xbf/255.0, blue: 0x63/255.0, alpha: 1.0)
+    }
+    
+    class func redColor()->UIColor {
+        return UIColor(red: 0xfc/255.0, green: 0x59/255.0, blue: 0x5d/255.0, alpha: 1.0)
+    }
+    
     
     class func cutImage(image:UIImage, size:CGSize)->UIImage{
         
